@@ -1,4 +1,3 @@
-import { valueDay, valueHours, valueMinutes, valueSecs } from './ref';
 
 export const pad = function (value) {
     return String(value).padStart(2, '0');
@@ -12,11 +11,4 @@ export const getTimerComponents = function (time) {
     
     return { days, hours, mins, secs };
 };
-
-export const updateClock = function ({days, hours, mins, secs}) {
-    valueDay.textContent = `${days}`;
-    valueHours.textContent = `${hours}`;
-    valueMinutes.textContent = `${mins}`;
-    valueSecs.textContent = `${secs}`;
-}
 
